@@ -952,7 +952,7 @@ echo "Kia ora te ao" > README.md
 ```
 ```bash
 git add README.md
-git commit -m 'Hello world in Maroi'
+git commit -m 'Hello world in Maori'
 git push origin master # This commit comes second
 ```
 
