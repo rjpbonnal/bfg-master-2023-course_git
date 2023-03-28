@@ -174,6 +174,13 @@ conda install git
 conda install -c anaconda git
 ```
 
+---
+
+- Almalinux/9
+```bash
+sudo dnf install git
+```
+
 # Create a repository
 
 ## Create a repository
@@ -336,10 +343,6 @@ if you do not know what you are doing.
 
 . . .
 
-```bash
-git add .
-``` 
-
 will add everything to your git repository
 
 . . .
@@ -382,7 +385,7 @@ git commit -m 'Adds 3 files'
 
 Sometime before commiting you want to revise your work and display the differences between your "future commit" and the actual repository
 
-. . .
+## See differences
 
 If you are working and not yet staged the file(s) (the git add command)
 
@@ -418,8 +421,8 @@ index 0a3ae34..ba7dae8 100644
 +++ b/README.txt
 @@ -1 +1,3 @@
 -Hola mundo!
-+# This file should contain only a list of hello world in many different languages and t
-he county code
++# This file should contain only a list of hello world
++# in many different languages and the county code
 +# Format: table with 2 columns CountryCode\tMessage
 +ES     Hola mundo!
 ```
@@ -633,7 +636,7 @@ Now you have 2 options:
 ----
 
 ```bash
-git clone https://github.com/helios/bfg-master.git
+git clone https://github.com/rjpbonnal/bfg-master.git
 ```
 . . .
 
@@ -663,7 +666,7 @@ cat .git/config
         logallrefupdates = true
         ignorecase = true
 [remote "origin"]
-        url = https://github.com/helios/bfg-master.git
+        url = https://github.com/rjpbonnal/bfg-master.git
         fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
         remote = origin
@@ -697,7 +700,7 @@ git remote add origin https://github.com/USERNAME/REPONAME.git
 . . .
 
 ```bash
-git remote add origin https://github.com/helios/bfg-scratch.git
+git remote add origin https://github.com/rjpbonnal/bfg-scratch.git
 ```
 
 ----
@@ -833,9 +836,9 @@ Writing objects: 100% (5/5), 448 bytes | 149.00 KiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'my_branch' on GitHub by visiting:
-remote:      https://github.com/helios/bfg-scratch/pull/new/my_branch
+remote:      https://github.com/rjpbonnal/bfg-scratch/pull/new/my_branch
 remote:
-To https://github.com/helios/bfg-scratch.git
+To https://github.com/rjpbonnal/bfg-scratch.git
  * [new branch]      my_branch -> my_branch
 ```
 
@@ -959,9 +962,9 @@ git push origin master # This commit comes second
 ----
 
 ```bash
-To https://github.com/helios/bfg-scratch.git
+To https://github.com/rjpbonnal/bfg-scratch.git
 ! [rejected]        master -> master (fetch first)
-error: failed to push some refs to 'https://github.com/helios/bfg-scratch.git'
+error: failed to push some refs to 'https://github.com/rjpbonnal/bfg-scratch.git'
     hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -977,7 +980,7 @@ Brando did not pull from the repo before start working on the `README.md` file.
 git pull origin master
 ```
 ```bash
-From https://github.com/helios/bfg-scratch
+From https://github.com/rjpbonnal/bfg-scratch
 * branch            master     -> FETCH_HEAD
 Auto-merging README.txt
 CONFLICT (content): Merge conflict in README.txt
@@ -1036,7 +1039,7 @@ remote: Counting objects: 100% (10/10), done.
 remote: Compressing objects: 100% (1/1), done.
 remote: Total 1 (delta 0), reused 1 (delta 0), pack-reused 0
 Unpacking objects: 100% (1/1), done.
-From https://github.com/helios/bfg-scratch
+From https://github.com/rjpbonnal/bfg-scratch
  * branch            master     -> FETCH_HEAD
    9b7de51..88d8159  master     -> origin/master
 Updating 9b7de51..88d8159
