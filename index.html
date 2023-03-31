@@ -150,13 +150,18 @@ be a mess.</p>
 <h2>Who wrote what ?</h2>
 <p>Carl: “Hey John, did you modified the <code>split</code> function
 ?”</p>
+<p>…</p>
 <p>John: “No.</p>
-<div class="fragment">
+</section>
+<section class="slide level2">
+
 <p>Carl: “Do you know who was working on that <code>split</code>
 function ?”</p>
+</section>
+<section class="slide level2">
+
 <p>John: “I know that Jane was working on a new function for splitting
 our datasets.”</p>
-</div>
 </section>
 <section id="who-deleted-my-code" class="slide level2">
 <h2>Who deleted my code ?</h2>
@@ -164,16 +169,20 @@ our datasets.”</p>
 everything is wiped out. Do you have any clue about that ?”</p>
 <p>Mike: “I am not sure but the IT during the night restored the whole
 storage beucase of a bug in the backup procedure. Try ask them.”</p>
-<div class="fragment">
+</section>
+<section class="slide level2">
+
 <p>Jane knocks to the IT office.</p>
-</div>
 <div class="fragment">
 <p>Jane: “I know that yesterday you restored the whole storage system.
 Can you recover my yesterday’s work ? I have a dead line tomorrow and I
 need my code that disappeared.”</p>
+</div>
+</section>
+<section class="slide level2">
+
 <p>Ervin: “Do you have a backup for your code?”</p>
 <p>Jane: “No…”</p>
-</div>
 <div class="fragment">
 <p>Ervin: “… sorry. A cup of coffe for the night?”</p>
 </div>
@@ -423,10 +432,11 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href=
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">(</span><span class="ex">use</span> <span class="st">&quot;git rm --cached &lt;file&gt;...&quot;</span> to unstage<span class="kw">)</span></span>
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>        <span class="ex">new</span> file:   README.md</span></code></pre></div>
-<div class="fragment">
+</section>
+<section class="slide level2">
+
 <p>You should see the <code>new file: README.md</code> in green.</p>
 <p>The file(s) are in the staging area, ready to be archived.</p>
-</div>
 </section></section>
 <section>
 <section id="commit" class="title-slide slide level1">
@@ -457,7 +467,7 @@ user</p>
 <div class="sourceCode" id="cb21"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> pippo</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;Hello world&quot;</span> <span class="op">&gt;</span> pluto</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span> /etc/apt/sources.list <span class="op">&gt;</span> prova</span></code></pre></div>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;Hi from the Moon&quot;</span> <span class="op">&gt;</span> prova</span></code></pre></div>
 </section>
 <section id="warning-git-add" class="slide level2">
 <h2>WARNING: git add</h2>
@@ -609,7 +619,9 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href=
 <p>Inspecting the history of a repository is possible using</p>
 <div class="sourceCode" id="cb34"><pre
 class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">git</span> log</span></code></pre></div>
-<div class="fragment">
+</section>
+<section class="slide level2">
+
 <div class="sourceCode" id="cb35"><pre
 class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><span id="cb35-1"><a href="#cb35-1"></a><span class="ex">commit</span> 592ddb899ed6bd4a3412003200d0ca2cd0b2fefd <span class="er">(</span><span class="ex">HEAD</span> <span class="at">-</span><span class="op">&gt;</span> master<span class="kw">)</span></span>
 <span id="cb35-2"><a href="#cb35-2"></a><span class="ex">Author:</span> Raoul Bonnal <span class="op">&lt;</span>bonnalraoul@ingm.org<span class="op">&gt;</span></span>
@@ -650,7 +662,6 @@ class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><
 <span id="cb35-37"><a href="#cb35-37"></a><span class="ex">commit</span> 9b55526864a5c30a030edc8efae03b2501a9833f</span>
 <span id="cb35-38"><a href="#cb35-38"></a><span class="ex">Author:</span> Raoul Bonnal <span class="op">&lt;</span>bonnalraoul@ingm.org<span class="op">&gt;</span></span>
 <span id="cb35-39"><a href="#cb35-39"></a><span class="ex">Date:</span>   Mon Apr 8 17:17:15 2019 +0200</span></code></pre></div>
-</div>
 </section></section>
 <section>
 <section id="store-commits-on-a-remote-server"
@@ -1028,11 +1039,14 @@ empty.</p>
 <p>Peter, 2019-04-9 @ 09:59 PM</p>
 <div class="sourceCode" id="cb60"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;Hola Mundo&quot;</span> <span class="op">&gt;</span> README.md</span></code></pre></div>
+</div>
+</section>
+<section class="slide level2">
+
 <div class="sourceCode" id="cb61"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">&#39;Hello world in Spanish&#39;</span></span>
 <span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin master <span class="co"># This commit comes first</span></span></code></pre></div>
-</div>
 </section>
 <section class="slide level2">
 
@@ -1106,6 +1120,10 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb69-1"><a href=
 repo is not up to date. So…</p>
 <div class="sourceCode" id="cb70"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin master</span></code></pre></div>
+</div>
+</section>
+<section class="slide level2">
+
 <div class="sourceCode" id="cb71"><pre
 class="sourceCode bash"><code class="sourceCode bash"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Enumerating objects: 10, done.</span>
 <span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Counting objects: 100% <span class="er">(</span><span class="ex">10/10</span><span class="kw">)</span><span class="ex">,</span> done.</span>
@@ -1119,10 +1137,10 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb71-1"><a href=
 <span id="cb71-10"><a href="#cb71-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Fast-forward</span></span>
 <span id="cb71-11"><a href="#cb71-11" aria-hidden="true" tabindex="-1"></a> <span class="ex">README.txt</span> <span class="kw">|</span> <span class="ex">2</span> +-</span>
 <span id="cb71-12"><a href="#cb71-12" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span> files changed, 1 insertion<span class="er">(</span><span class="ex">+</span><span class="kw">)</span><span class="ex">,</span> 1 deletion<span class="er">(</span><span class="ex">-</span><span class="kw">)</span></span></code></pre></div>
-</div>
-<div class="fragment">
+</section>
+<section class="slide level2">
+
 <p>Evreything is upgraded and ready to go.</p>
-</div>
 </section></section>
 <section>
 <section id="remove-files" class="title-slide slide level1">

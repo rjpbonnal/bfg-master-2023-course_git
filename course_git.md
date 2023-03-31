@@ -11,11 +11,15 @@ Many people want to contribute but modifying the same source code can be a mess.
 ## Who wrote what ?
 Carl: "Hey John, did you modified the `split` function ?"
 
+...
+
 John: "No.
 
-. . .
+---
 
 Carl: "Do you know who was working on that `split` function ?"
+
+---
 
 John: "I know that Jane was working on a new function for splitting our datasets."
 
@@ -24,13 +28,15 @@ Jane: "Hey guys yesterday I wrote about 300 lines of code and today everything i
 
 Mike: "I am not sure but the IT during the night restored the whole storage beucase of a bug in the backup procedure. Try ask them."
 
-. . .
+---
 
 Jane knocks to the IT office.
 
 . . .
 
 Jane: "I know that yesterday you restored the whole storage system. Can you recover my yesterday's work ? I have a dead line tomorrow and I need my code that disappeared."
+
+---
 
 Ervin: "Do you have a backup for your code?"
 
@@ -39,7 +45,6 @@ Jane: "No..."
 . . .
 
 Ervin: "... sorry. A cup of coffe for the night?"
-
 
 ## Hack the main code
 Ted has a great idea and wants to modify the main script to make everyone happy.
@@ -293,7 +298,7 @@ Changes to be committed:
         new file:   README.md
 ```
 
-. . .
+---
 
 You should see the `new file: README.md` in green.
 
@@ -328,7 +333,7 @@ It will open the default editor and wait for a comment by the user
 ```bash
 touch pippo
 echo "Hello world" > pluto
-head /etc/apt/sources.list > prova
+echo "Hi from the Moon" > prova
 ```
 
 ## WARNING: git add
@@ -496,7 +501,7 @@ Inspecting the history of a repository is possible using
 git log
 ```
 
-. . .
+---
 
 ```{.bash .numberLines}
 commit 592ddb899ed6bd4a3412003200d0ca2cd0b2fefd (HEAD -> master)
@@ -941,6 +946,9 @@ Peter, 2019-04-9 @ 09:59 PM
 ```bash
 echo "Hola Mundo" > README.md
 ```
+
+---
+
 ```bash
 git add README.md
 git commit -m 'Hello world in Spanish'
@@ -1033,6 +1041,9 @@ Then Peter will modify something he will get an error because his repo is not up
 ```bash
 git pull origin master
 ```
+
+---
+
 ```bash
 remote: Enumerating objects: 10, done.
 remote: Counting objects: 100% (10/10), done.
@@ -1047,7 +1058,8 @@ Fast-forward
  README.txt | 2 +-
  1 files changed, 1 insertion(+), 1 deletion(-)
 ```
-. . .
+
+---
 
 Evreything is upgraded and ready to go.
 
