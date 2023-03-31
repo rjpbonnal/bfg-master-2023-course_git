@@ -1,6 +1,6 @@
 % Reproducibility
-% Raoul J.P. Bonnal, Marco Passaro
-% 5-6-7/10/2020
+% Raoul J.P. Bonnal
+% 2023-03-31
 
 # Sharing Code
 
