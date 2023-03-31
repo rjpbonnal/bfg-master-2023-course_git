@@ -11,7 +11,7 @@ Many people want to contribute but modifying the same source code can be a mess.
 ## Who wrote what ?
 Carl: "Hey John, did you modified the `split` function ?"
 
-...
+. . .
 
 John: "No.
 
